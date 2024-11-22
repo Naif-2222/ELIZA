@@ -86,21 +86,6 @@ patterns = [
 ]
 
 
-# Setting the title and description
-st.title("Joe Girard - Your Personal Car Salesman")
-st.write("Welcome to Joe's corner! Ask me anything about cars, deals, and the best options for your budget. Joe Girard is here to help you drive away with the perfect car!")
-
-# Chat interface
-st.header("Chat with Joe")
-if "chat_history" not in st.session_state:
-    st.session_state["chat_history"] = []  # Initialize chat history
-
-# User input box
-user_input = st.text_input("You:", placeholder="Type your question here...")
-
-
-
-
 # Function to match user input with patterns and generate a response
 # Uses regex to identify the intent and dynamically adapts the response
 def response_generation(user_input):
@@ -119,21 +104,25 @@ def response_generation(user_input):
             return response  # Return the response if no substitution is needed
     return "Can you tell me more about that?"  # Fallback in case no pattern matches
 
-# Process input and generate a response
-if user_input:
-   # Generate a response using the chatbot logic
-    response = response_generation(user_input)
-    
-    # Append to chat history
-    st.session_state["chat_history"].append((user_input, response))
+def run_chatbot():
+    st.title("Joe Girard - Your Personal Car Salesman")
+    st.write("Welcome to Joe's corner! Ask me anything about cars, deals, and the best options for your budget. Joe Girard is here to help you drive away with the perfect car!")
 
-# Display the chat history
-st.write("### Chat History")
-for user_msg, joe_response in st.session_state["chat_history"]:
-    st.markdown(f"**You:** {user_msg}")
-    st.markdown(f"**{joe_response}**")
+    st.header("Chat with Joe")
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []  # Initialize chat history
 
-# Reset chat history button
-if st.button("Reset Chat"):
-    st.session_state["chat_history"] = []
-    st.success("Chat history cleared!")
+    user_input = st.chat_input(placeholder="Type your question here...")
+
+    if user_input:
+        response = response_generation(user_input)
+        
+        st.session_state["chat_history"].append((user_input, response))
+
+    for user_msg, joe_response in st.session_state["chat_history"]:
+            with st.chat_message("user"):
+                st.markdown(user_msg)
+            with st.chat_message("assistant"):
+                st.markdown(joe_response)
+
+run_chatbot()
