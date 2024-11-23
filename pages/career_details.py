@@ -12,20 +12,16 @@ patterns = [
     ]),
 
     # Career or Job
-    (r"career|job", [
-        "Are you looking to start a new career or advance in your current one?",
-        "Tell me more about what you're aiming for in your career or job search."
-    ]),
     (r"need a (job|career)", [
         "What type of job are you looking for?",
         "Can you share your career goals so I can guide you better?"
     ]),
 
     # Education and Major
-    (r"major|degree|study|qualification", [
-        "What is your major or field of study?",
-        "How does your degree align with your career goals?"
+    (r"senior|manager|junior", [
+        "Why are you aimming for this level?",
     ]),
+
     (r"my major is (.*)", [
         "{0} is a great field! What kind of jobs are you considering with it?",
         "How do you plan to use your major in {0} to achieve your goals?"
