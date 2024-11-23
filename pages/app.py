@@ -23,5 +23,4 @@ def run_chatbot():
         with st.chat_message("assistant"):
             st.markdown(bot_response)
 
-if __name__ == "__main__":
-    run_chatbot()
+run_chatbot()

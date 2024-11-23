@@ -31,7 +31,6 @@ patterns = [
     (r"\b(?:python|java|javascript|sql|excel|communication|leadership|project management|teamwork|negotiation|design|marketing|analytical|management)\b", 
      ["How much do you think you will be paid for this skill?"]),
 
-
     # Career Level (Senior, Manager, Junior)
     # Captures various career levels (e.g., senior, junior, or manager)
     (r"senior|manager|junior|entry level|chief", ["Why are you aiming for this level?"]),
@@ -46,7 +45,7 @@ patterns = [
         
     # overwhelm & Stress
     # Captures discussions about work-life balance, stress, or feeling overwhelmed
-    (r"\bstress(ed|ing|ful|es)?\b|\boverwhelm(ed|ing|ing)?\b", ["Why do you feel that way?"])
+    (r"\bstress(ed|ing|ful|es)?\b|\boverwhelm(ed|ing|ing)?\b", ["Why do you feel that way?"]),
 
     # Lack of Growth/Opportunity
     # A broader pattern for capturing multiple phrases regarding stagnation or lack of progression
@@ -63,11 +62,8 @@ patterns = [
 
     # Workplace Conflict
     # Captures discussions about conflicts with bosses, coworkers, or workplace issues
-    
-    # Workplace Conflict
-    # Captures discussions about conflicts with bosses, coworkers, or workplace issues
     (r"\b(boss|supervisor|manager|team|coworker|colleague|client|customer|partner)\s*(conflict|disagreement|issue|problem|fight|dispute|frustration)\b", 
-    ["What do you think might help resolve this?"])
+    ["What do you think might help resolve this?"]),
 
     # Yes Response
     # Captures a positive "yes" response
