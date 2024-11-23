@@ -4,19 +4,33 @@ patterns = [
     (r"hi|hello|hey", [
         "Hello! How can I assist you with your career today?",
         "Hi there! What's on your mind regarding your career?",
-        "Hey! How can I help you achieve your career goals?"
+        "Hey! How can I help you achieve your career goals?", 
+        "Hi! Are you thinking about a career move or building new skills?",
+        "Hello! Let’s dive into your career journey. What’s your first question?"
     ]),
     (r"how are you", [
         "I'm here to guide you in your career. How are you feeling about your career today?",
-        "I'm just a chatbot, but I'm ready to help. How are you doing?"]),
+        "I'm just a chatbot, but I'm ready to help. How are you doing?",
+        "I’m all set to assist you. How’s your career journey going?",
+        "Doing great! Let’s focus on you—how are you feeling about your career?"
+    ]),
         
     # Job Searching
     # Captures phrases related to looking for or searching for jobs
-    (r"find|search|looking for", ["Job searching can be challenging. What type of role are you looking for?"]),
+    (r"find|search|looking for", [
+        "Job searching can be challenging. What type of role are you looking for?
+        "What’s your dream job? Let’s start there.",
+        "Looking for a job can feel overwhelming—how can I make it easier for you?",
+        "Are you exploring specific industries or open to different opportunities?",
+        "Tell me more about the kind of job you’re aiming for."
+    "]),
     
     # Career Change
     # Captures phrases indicating someone wants to change or switch careers
-    (r"change|switch|new career", ["Why do you want to make a career change?"]),
+    (r"change|switch|new career", ["
+    Why do you want to make a career change?
+    
+    "]),
 
     # General Job-Related Inquiry
     # Captures general terms like "job" or "work" to inquire about career-related questions
