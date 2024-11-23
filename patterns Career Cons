@@ -1,0 +1,124 @@
+patterns = [
+    # Greetings
+    (r"hi|hello|hey", [
+        "Hello! How can I assist you with your career today?",
+        "Hi there! What's on your mind regarding your career?",
+        "Hey! How can I help you achieve your career goals?"
+    ]),
+    (r"how are you", [
+        "I'm here to guide you in your career. How are you feeling about your career today?",
+        "I'm just a chatbot, but I'm ready to help. How are you doing?"
+    ]),
+
+    # Career or Job
+    (r"need a (job|career)", [
+        "What type of job are you looking for?",
+        "Can you share your career goals so I can guide you better?"
+    ]),
+
+    # Education and Major
+    (r"senior|manager|junior", [
+        "Why are you aiming for this level?"
+    ]),
+
+    (r"my major is (.*)", [
+        "{0} is a great field! What kind of jobs are you considering with it?",
+        "How do you plan to use your major in {0} to achieve your goals?"
+    ]),
+
+    # Skills
+    (r"(skills|strengths|weaknesses)", [
+        "What are your top strengths, and how do you think they will benefit your career?",
+        "Identifying your skills is crucial. What do you consider your top strengths?"
+    ]),
+    (r"\b(python|java|sql|communication|leadership|marketing)\b", [
+        "{0} is a valuable skill! How are you showcasing it in your career?",
+        "{0} is in demand. Have you highlighted it in your resume or LinkedIn?"
+    ]),
+
+    # Interview Preparation
+    (r"interview|prepare", [
+        "Preparing for an interview is key. What role are you preparing for?",
+        "Interviews are a great opportunity to shine! What do you need help with?"
+    ]),
+    (r"questions|ask", [
+        "What questions do you have in mind for the interviewer?",
+        "Asking insightful questions can leave a good impression. What’s on your list?"
+    ]),
+
+    # Career Growth
+    (r"grow|promotion|advance", [
+        "Career growth requires planning and skill development. What steps are you currently taking?",
+        "Are you exploring new responsibilities or networking opportunities for growth?"
+    ]),
+
+    # Salary and Negotiation
+    (r"salary|pay|money", [
+        "What are your salary expectations for your next role?",
+        "Knowing your worth is important. What salary range are you aiming for?"
+    ]),
+    (r"(\d{1,3}(?:,\d{3})+)", [
+        "Why do you think you're worth {0}? What unique skills do you bring?",
+        "That’s an ambitious goal of {0}. How did you arrive at that number?"
+    ]),
+
+    # Work-Life Balance
+    (r"stress|overwhelmed|work-life balance", [
+        "Balancing work and life can be challenging. How are you managing your time?",
+        "Work-life balance is so important. What’s stressing you out right now?"
+    ]),
+
+    # Remote work pattern
+    (r"\bremote|work\s+from\s+home|telecommute|online\s+job\b", 
+     ["Working remotely is such a flexible and convenient option! Are you looking for a fully remote position, or do you like the idea of mixing it up with some in-office days too?"]),
+    
+    # Onsite work pattern
+    (r"\bonsite\b|\boffice work\b", 
+     ["Ah, onsite work! It's great for building personal connections and working closely with your team. Do you already have a role in mind, or are you just exploring your options?"]),
+    
+    # Hybrid work pattern
+    (r"\bhybrid\b|\bblend\b", 
+     ["Hybrid work sounds like the best of both worlds! Do you already know how much time you'd want to spend in the office versus working from home?"]),
+    
+    # Flexibility and preferences
+    (r"\bflexibility\b", 
+     ["Flexibility is such an important factor! What’s most important to you — scheduling freedom, work location, or something else?"]),
+    
+    # Work-life balance
+    (r"\bwork life balance\b", 
+     ["Balancing work and life can be tricky, but it's so important. Are you trying to set boundaries with your work schedule, or are you looking for tips to prioritize your time better?"]),
+    
+    # Work arrangement (remote, onsite, hybrid)
+    (r"\bhow\b.*\bwork\b.*\b(remote|onsite|hybrid)\b", 
+     ["It’s great that you're thinking about what works best for you! Are you leaning towards working remotely, going into an office, or something in between like a hybrid setup?"]),
+    
+    # Entry-level and internships
+    (r"\binternship|entry-level|graduate\s+job|trainee\b", 
+     ["Exciting! Starting out with an internship or an entry-level role is such a great way to kick off your career. What kind of role are you looking for, or are you still figuring it out?"]),
+     
+    # Career change
+    (r"\bcareer\s+change|shift\b", 
+     ["Switching careers can be a big move, but it’s often so worth it! Do you have a new field in mind, or are you still exploring what might be a good fit?"]),
+    
+    # Social media and networking
+    (r"\bnetwork\s+(social\s+media|Instagram|Twitter|Facebook|LinkedIn)\b", 
+     ["Networking online can open so many doors! Do you want to optimize your profile to stand out to recruiters, or are you looking for advice on connecting with people in your industry?"]),
+    
+    # Employee referrals
+    (r"\breferral\s+recommendation\b", 
+     ["Referrals are such a great way to land a job! Have you thought about reaching out to someone in your network, or do you need tips on how to ask for a recommendation?"]),
+ 
+    # Online communities and forums
+    (r"\bcommunity\s+groups|forums|online\s+communities\b", 
+     ["There are so many online groups and forums where you can connect with others and learn about job opportunities. Are you already part of any career-focused communities, or would you like suggestions?"]),
+    
+    # Volunteering
+    (r"\bvolunteering\s+work\b", 
+     ["Volunteering is such a great way to gain experience and make connections while giving back! Is there a cause you’re passionate about, or are you exploring options?"]),
+
+    # Default Catch-all
+    (r".*", [
+        "I’m not sure I understand. Could you rephrase?",
+        "That’s interesting. Can you clarify or provide more details?"
+    ])
+]
