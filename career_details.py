@@ -18,19 +18,19 @@ patterns = [
     # Job Searching
     # Captures phrases related to looking for or searching for jobs
     (r"find|search|looking for", [
-        "Job searching can be challenging. What type of role are you looking for?
+        "Job searching can be challenging. What type of role are you looking for?",
         "What’s your dream job? Let’s start there.",
         "Looking for a job can feel overwhelming—how can I make it easier for you?",
         "Are you exploring specific industries or open to different opportunities?",
         "Tell me more about the kind of job you’re aiming for."
-    "]),
+    ])
+    ,
     
     # Career Change
     # Captures phrases indicating someone wants to change or switch careers
-    (r"change|switch|new career", ["
-    Why do you want to make a career change?
-    
-    "]),
+    (r"change|switch|new career", [
+        "Why do you want to make a career change?"
+    ]),
 
     # General Job-Related Inquiry
     # Captures general terms like "job" or "work" to inquire about career-related questions
