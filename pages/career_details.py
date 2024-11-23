@@ -8,7 +8,6 @@ patterns = [
     ]),
     (r"how are you", [
         "I'm here to guide you in your career. How are you feeling about your career today?",
-        "I'm just a chatbot, but I'm ready to help. How are you doing?"
     ]),
 
     # Career or Job

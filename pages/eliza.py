@@ -8,6 +8,7 @@ def response_generation(user_input):
     Matches the user input with the patterns and generates an appropriate response.
     Corrects minor spelling errors.
     """
+    user_input = re.sub(r"[^\w\s]", "", user_input)
     user_input = correct_spelling(user_input)
     for pattern, responses in patterns:
         match = re.search(pattern, user_input, re.IGNORECASE)
