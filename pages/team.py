@@ -5,39 +5,63 @@ and a brief description of the project.
 """
 import streamlit as st
 
-# Team Page
+# Page Configuration
+st.set_page_config(page_title="Our Team", page_icon="👥", layout="wide")
 
-st.title("Our Team 👥")
-    
-st.write("") 
+# Title and Introduction
+st.title("Meet Our Team 👥")
+st.write("""
+We are a team of passionate professionals committed to achieving excellence in every aspect of this project. 
+Learn more about us below!
+""")
 
-# Create 5 columns
-col1, col2, col3, col4, col5 = st.columns(5)
+# Add a divider for better separation
+st.divider()
 
-with col1:
- st.image("/workspaces/ELIZA/Images/u.png")
- st.write("Adwa Alshehri") 
- st.write("A brief bio about Adwa.")
- st.write("")  
+# Team Members Data
+team_members = [
+    {
+        "name": "Adwa Alshehri",
+        "image": "Images/u.png",
+        "role": "Project Coordinator",
+        "bio": "Adwa leads the coordination efforts, ensuring smooth collaboration across the team."
+    },
+    {
+        "name": "Sheikha Aldossari",
+        "image": "Images/u.png",
+        "role": "Data Scientist",
+        "bio": "Sheikha specializes in data analysis and modeling to extract valuable insights."
+    },
+    {
+        "name": "Lamees",
+        "image": "Images/u.png",
+        "role": "Frontend Developer",
+        "bio": "Lamees is responsible for designing and developing the user interface."
+    },
+    {
+        "name": "Naif",
+        "image": "Images/u.png",
+        "role": "Backend Developer",
+        "bio": "Naif handles backend development and ensures the application runs smoothly."
+    },
+    {
+        "name": "Mana Saleh",
+        "image": "Images/u.png",
+        "role": "Full Stack Developer",
+        "bio": "Mana is in charge of integrating frontend and backend systems for seamless operation."
+    }
+]
 
-with col2:
- st.image("/workspaces/ELIZA/Images/u.png")
- st.write("Sheikha Aldossari")
- st.write("A brief bio about Sheikha.")
- st.write("")  
-    
-with col3:
- st.image("/workspaces/ELIZA/Images/u.png")
- st.write("Lamees")
- st.write("A brief bio about Lamees.")
-    
-with col4:
- st.image("/workspaces/ELIZA/Images/u.png")
- st.write("Naif") 
- st.write("A brief bio about Naif.")
+# Display Team Members
+cols = st.columns(5)  # Create 5 columns for equal spacing
 
-with col5:
- st.image("/workspaces/ELIZA/Images/u.png")
- st.write("Manaa")
- st.write("A brief bio about Manaa.")
+for idx, member in enumerate(team_members):
+    with cols[idx % 5]:  # Use each column for one member
+        st.image(member["image"], width=120, use_column_width="always")  # Resize the image
+        st.markdown(f"### {member['name']}")
+        st.markdown(f"**{member['role']}**")
+        st.caption(member["bio"])  # Display the bio as a smaller caption
 
+# Add a footer
+st.write("---")
+st.write("💼 **Powered by Our Team** – Dedicated to innovation and excellence.")
