@@ -14,19 +14,13 @@ st.title("🚗💨 Welcome to **Mirai's Career Consulting**")
 
 # Hero Image
 image = Image.open("Images/Image 1.jpeg")  # Ensure the image file path is correct
-st.image(image, caption="Empowering Your Career Journey", use_column_width="always")
+st.image(image, caption="Empowering Your Career Journey", use_container_width="always")
 
 # Introduction Section
 st.write("---")
 st.markdown("""
-### 🌟 **Your Career Goals, Our Mission**
-Welcome to **Mirai's Career Consulting**! We're committed to helping you achieve your career aspirations. 
-Whether you're looking to:
-- 🚀 Land your dream job,
-- 📈 Advance your career, or
-- 🌍 Explore new opportunities,
-
-we provide personalized strategies and top-notch guidance to help you reach your full potential.
+### 🌟 **What is Miria?**
+Miria is a conversational chatbot that asks thoughtful, relevant questions to help individuals explore their career paths. It assists with job searching, career changes, skills assessment, salary expectations, and job satisfaction. By guiding users through key questions, Miria encourages self-reflection, helping them gain clarity and insight into their professional goals.
 """)
 
 st.write("---")
@@ -39,7 +33,7 @@ At **Mirai's Career Consulting**, we believe career development should be:
 - **Empowering**: Gain confidence in your career decisions.
 - **Supportive**: We’re here to guide you every step of the way.
 
-Our mission is to make your career journey **seamless**, **fulfilling**, and **rewarding** by connecting you with **professional specialists** who provide tailored advice.
+Our mission is to make your career journey **seamless**, **fulfilling**, and **rewarding** by connecting you with **professional specialists**.
 """)
 
 st.write("---")
@@ -48,7 +42,7 @@ st.write("---")
 st.markdown("""
 ### 🔍 **Explore Our Features**
 Here’s how our platform helps you:
-1. **💬 Chat Page**: Chat with professional specialists to get tailored career advice.
+1. **💬 Chat Page**: Chat with professional specialist.
 2. **👥 Team Page**: Learn about the dedicated team behind Mirai's Career Consulting.
 """)
 
