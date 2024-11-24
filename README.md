@@ -90,7 +90,7 @@ Ensure you have the following installed:
 ## 👥 Meet the Team
 
 - **Adwa Alshehri**
-- **Sheikha Aldossari**
+- **Shaykhah Aldawsari**
 - **Lamees**
 - **Naif**
 - **Mana Saleh**
