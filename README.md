@@ -1,4 +1,4 @@
-# ELIZA Chatbot: Career Consulting Platform 🚗💨
+# Mirai Chatbot: Career Consulting Platform 💡
 
 This project implements a simple chatbot inspired by the classic Eliza program, tailored specifically for career guidance. The chatbot uses pattern matching to engage users in discussions related to their career aspirations, job searching, and professional development.
 
@@ -99,8 +99,7 @@ Ensure you have the following installed:
 
 ## 🌐 About the Project
 
-ELIZA is inspired by the classic AI chatbot but tailored for modern career consulting needs. Our mission is to empower users with personalized career guidance through seamless and professional interactions.
-
+Mirai is inspired by the classic chatbot 'Eliza' but tailored for modern career consulting needs. Our mission is to empower users through meaningful interactions with professionals."
 ---
 
 ## 📜 License
