@@ -23,20 +23,20 @@ team_members = [
     {
         "name": "Adwa Alshehri",
         "image": "Images/u.png",
-        "role": "Project Coordinator",
-        "bio": "Adwa leads the coordination efforts, ensuring smooth collaboration across the team."
+        "role": "Streamlit page designer",
+        "bio": "Adwa handled the streamlit code in team page and main page."
     },
     {
-        "name": "Sheikha Aldossari",
+         "name": "Shaykhah Aldawsari",
         "image": "Images/u.png",
-        "role": "Data Scientist",
-        "bio": "Sheikha specializes in data analysis and modeling to extract valuable insights."
+        "role": "Developer",
+        "bio": "Build the main logic and enhanced the accuracy of the system"
     },
     {
-        "name": "Lamees",
+       "name": "Lamees Aloqlan",
         "image": "Images/u.png",
-        "role": "Frontend Developer",
-        "bio": "Lamees is responsible for designing and developing the user interface."
+        "role": "Developer & Designer",
+        "bio": "Lamees is responsible for designing chat UI and enhancing the main function & collect the pattern."
     },
     {
         "name": "Naif Abdullah Alsabhan",
@@ -45,10 +45,11 @@ team_members = [
         "bio": "Naif handles backend development and ensures the application runs smoothly where he uses oop design."
     },
     {
-        "name": "Mana Saleh",
+        
+         "name": "Mana Saleh",
         "image": "Images/u.png",
-        "role": "Full Stack Developer",
-        "bio": "Mana is in charge of integrating frontend and backend systems for seamless operation."
+        "role": "Develper & Deployment",
+        "bio": "Mana is in charge of developing and breaking down the code as will as deployment."
     }
 ]
 
