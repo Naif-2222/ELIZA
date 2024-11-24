@@ -2,7 +2,7 @@ import streamlit as st
 from eliza import response_generation
 
 def run_chatbot():
-    st.title("Career Coach - ELIZA")
+    st.title("Career consultant - Mirai")
 
     if "chat_history" not in st.session_state:
         st.session_state["chat_history"] = []

@@ -11,7 +11,9 @@ def response_generation(user_input):
     Ensures no immediate repetition of responses.
     """
     # Correct any spelling mistakes in the input
+    user_input =re.sub(r"[^\w\s]","",user_input)
     user_input = correct_spelling(user_input)
+    
     matches = []
     
     for pattern, responses in patterns:
