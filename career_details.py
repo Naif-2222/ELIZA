@@ -1,7 +1,7 @@
 # Define patterns and responses
 patterns = [
     # Greetings
-    (r"hi|hello|hey", [
+    (r"\b(hi|hello)\b", [
         "Hello! How can I assist you with your career today?",
         "Hi there! What's on your mind regarding your career?",
         "Hello! Let`s dive into your career journey. What`s your first question?"
