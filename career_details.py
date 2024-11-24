@@ -4,25 +4,18 @@ patterns = [
     (r"hi|hello|hey", [
         "Hello! How can I assist you with your career today?",
         "Hi there! What's on your mind regarding your career?",
-        "Hey! How can I help you achieve your career goals?", 
-        "Hi! Are you thinking about a career move or building new skills?",
-        "Hello! Let’s dive into your career journey. What’s your first question?"
+        "Hello! Let`s dive into your career journey. What`s your first question?"
     ]),
     (r"how are you", [
         "I'm here to guide you in your career. How are you feeling about your career today?",
-        "I'm just a chatbot, but I'm ready to help. How are you doing?",
-        "I’m all set to assist you. How’s your career journey going?",
-        "Doing great! Let’s focus on you—how are you feeling about your career?"
+        "Doing great! Let`s focus on you how are you feeling about your career?"
     ]),
         
     # Job Searching
     # Captures phrases related to looking for or searching for jobs
     (r"find|search|looking for", [
         "Job searching can be challenging. What type of role are you looking for?",
-        "What’s your dream job? Let’s start there.",
-        "Looking for a job can feel overwhelming—how can I make it easier for you?",
-        "Are you exploring specific industries or open to different opportunities?",
-        "Tell me more about the kind of job you’re aiming for."
+        "What’s your dream job? Let’s start there."
     ])
     ,
     
@@ -38,11 +31,11 @@ patterns = [
 
     # Skills and Strengths
     # Captures discussions about skills and strengths (critical for self-assessment and career progression)
-    (r"skills|strengths", ["Identifying your strengths is crucial. What do you consider your top skills?"]),
+    (r"skills|strengths", ["What do you consider your top skills?"]),
 
     # Skill-Specific Inquiries
     # Captures mentions of specific technical and soft skills, prompting questions about their value
-    (r"\b(?:python|java|javascript|sql|excel|communication|leadership|project management|teamwork|negotiation|design|marketing|analytical|management)\b", 
+    (r"\b(?:python|java|javascript|sql|excel|communication|leadership|project management|teamwork|negotiation|design|marketing|analytical|management|programming)\b", 
      ["How much do you think you will be paid for this skill?"]),
 
     # Career Level (Senior, Manager, Junior)
@@ -51,7 +44,7 @@ patterns = [
 
     # Salary Expectations
     # Captures queries related to salary or compensation
-    (r"salary|money", ["What are your salary expectations?"]),
+    (r"salary|money|pay", ["What are your salary expectations?"]),
 
     # Salary Range
     # Captures numeric salary expectations or salary discussions with an optional comma for formatting
@@ -91,9 +84,6 @@ patterns = [
     # Captures exit or goodbye phrases to gracefully end the conversation
     (r"(quit|exit|bye)", ["Goodbye! Best of luck with your career. Feel free to reach out anytime."]),
     
-    # Default Catch-All
-    # Captures any other input that doesn’t match the above patterns, encouraging the user to elaborate
-    (r".*", ["I'm not sure I understand. Can you tell me more about what you're looking for?"])
 ]
 
 
