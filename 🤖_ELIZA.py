@@ -4,13 +4,13 @@ from PIL import Image
 # Page Configuration
 st.set_page_config(
     page_title="Mirai's Career Consulting",
-    page_icon="🚗",
+    page_icon="💡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Main Page Title
-st.title("🚗💨 Welcome to **Mirai's Career Consulting**")
+st.title("Welcome to **Mirai's Career Consulting** 💡")
 
 # Hero Image
 image = Image.open("Images/Image 1.jpeg")  # Ensure the image file path is correct
