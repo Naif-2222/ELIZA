@@ -39,10 +39,10 @@ team_members = [
         "bio": "Lamees is responsible for designing and developing the user interface."
     },
     {
-        "name": "Naif",
+        "name": "Naif Abdullah Alsabhan",
         "image": "Images/u.png",
-        "role": "Backend Developer",
-        "bio": "Naif handles backend development and ensures the application runs smoothly."
+        "role": "object orianted design",
+        "bio": "Naif handles backend development and ensures the application runs smoothly where he uses oop design."
     },
     {
         "name": "Mana Saleh",
