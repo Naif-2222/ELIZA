@@ -69,8 +69,8 @@ patterns = [
 
     # Workplace Conflict
     # Captures discussions about conflicts with bosses, coworkers, or workplace issues
-    (r"\b(boss|supervisor|manager|team|coworker|colleague|client|customer|partner)\s*(conflict|disagreement|issue|problem|fight|dispute|frustration)\b", 
-    ["What do you think might help resolve this?"]),
+    (r"\b(conflict|disagreement|issue|problem|fight|dispute|frustration)\b", 
+    ["What skills do you think might help resolve this?"]),
 
     # Yes Response
     # Captures a positive "yes" response
