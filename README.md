@@ -1,17 +1,18 @@
 # ELIZA Chatbot: Career Consulting Platform 🚗💨
 
-Welcome to **ELIZA**, a cutting-edge AI chatbot designed to revolutionize career consulting. Whether you're looking to land your dream job, explore new career opportunities, or develop skills for professional growth, **ELIZA** is here to assist you every step of the way.
+This project implements a simple chatbot inspired by the classic Eliza program, tailored specifically for career guidance. The chatbot uses pattern matching to engage users in discussions related to their career aspirations, job searching, and professional development.
 
 ---
 
 ## 🌟 Key Features
 
-- **Career Guidance**: Tailored advice to help you navigate your career path.
-- **Job Searching**: Insights and tips for finding your ideal role.
-- **Skill Development**: Learn what skills are in demand and how to develop them.
-- **AI-Powered Responses**: Advanced natural language processing (NLP) ensures meaningful and accurate interactions.
-- **Seamless Chat Interface**: A user-friendly interface for intuitive conversations.
-
+- **Greetings**: Welcomes users and offers assistance.
+- **Job Searching**: Engages users looking for job opportunities.
+- **Career Change**: Prompts discussions for those considering a switch.
+- **Skills Assessment**: Inquires about users' top skills.
+- **Salary Expectations**: Facilitates conversations about salary.
+- **Job Satisfaction**: Encourages reflection on fulfillment.
+- **Graceful Exit**: Ends conversations on a positive note.
 ---
 
 ## 📂 Project Structure
@@ -22,7 +23,6 @@ Here’s a quick overview of the project’s structure:
 ELIZA/
 ├── Images/               # Contains image assets for the platform
 ├── pages/                # Streamlit pages for the multi-page app
-│   ├── main.py           # The main landing page
 │   ├── chat.py           # The chatbot interface
 │   ├── team.py           # Information about the team
 ├── career_details.py     # Logic for handling career-related details
